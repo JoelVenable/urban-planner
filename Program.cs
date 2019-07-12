@@ -19,7 +19,7 @@ namespace Planner
 
       EliotTowers.Purchase("Shelly");
 
-      Program.Describe(EliotTowers);
+      EliotTowers.Describe();
 
     }
 
@@ -27,17 +27,5 @@ namespace Planner
 
 
 
-    static void Describe(Building building)
-    {
-      System.Console.WriteLine();
-      System.Console.WriteLine(building.Address);
-      System.Console.WriteLine("-----------------");
-      System.Console.WriteLine($"Designed by {building.Designer}");
-      System.Console.WriteLine($"Constructed on {building.DateConstructed}");
-      System.Console.WriteLine($"Owned by {building.Owner}");
-      System.Console.WriteLine($"{building.Volume} cubic meters of space");
-      System.Console.WriteLine();
-
-    }
   }
 }
