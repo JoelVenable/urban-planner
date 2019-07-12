@@ -20,6 +20,12 @@ namespace Planner
       }
     }
 
+    public string Address { get { return _address; } }
+    public string Designer { get { return _designer; } }
+    public DateTime DateConstructed { get { return _dateConstructed; } }
+    public string Owner { get { return _owner; } }
+
+
     public Building(string address)
     {
       _address = address;
